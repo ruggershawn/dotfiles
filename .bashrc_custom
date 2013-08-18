@@ -1,1 +1,30 @@
+#TOMCAT
+alias tc='cd ${TOMCAT_HOME}'
+alias tcl='cd ${TOMCAT_HOME}/logs'
+alias tcw='cd ${TOMCAT_HOME}/webapps'
+alias tct='tail -f ${TOMCAT_HOME}/logs/catalina.out'
+alias tcs='rm -rf $TOMCAT_HOME/work;$TOMCAT_HOME/bin/startup.sh'
+alias tcx='$TOMCAT_HOME/bin/shutdown.sh'
+alias tcr='tcx;tcs'
 
+EDITOR=vi;
+export EDITOR
+
+#MYSQL
+#alias mysql=/usr/local/mysql/bin/mysql
+#alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+alias mys='sudo service mysql start'
+alias myx='sudo service mysql stop'
+
+#PATH
+export MYSQL_PW=root
+export EDITOR=vim
+export TOMCAT_HOME=/home/sk/Programs/apache-tomcat-6.0.33
+export CATALINA_HOME=/home/sk/Programs/apache-tomcat-6.0.33
+export JAVA_OPTS=-Xmx512m 
+export CATALINA_OPTS="-Xms512M -Xmx1024M"
+
+alias bv='vim ~/.bash_profile'
+alias vi='vim'
+alias bc='cat ~/.bash_profile'
+alias .='source ~/.bash_profile .'
